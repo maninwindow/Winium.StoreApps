@@ -1,5 +1,6 @@
 # coding: utf-8
 from time import sleep
+import base64
 
 import pytest
 from selenium.common.exceptions import NoSuchElementException, NoAlertPresentException, WebDriverException
@@ -170,6 +171,13 @@ class TestGetCommands(WuaTestCase):
         assert self.driver.find_element_by_name('May').is_displayed()
         assert self.driver.find_element_by_name('June').is_displayed()
         assert not self.driver.find_element_by_name('August').is_displayed()
+
+    def test_file_ops(self):
+        with open(__file__) as f:
+            encoded = base64.b64encode(f.read())
+        self.driver.push_file(r"test\sample.dat", encoded)
+        data = self.driver.pull_file(r"test\sample.dat")
+        assert encoded == data
 
 
 class UsesSecondTab(WuaTestCase):
