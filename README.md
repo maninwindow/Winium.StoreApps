@@ -1,4 +1,4 @@
-<p align="right">
+﻿<p align="right">
 English description | <a href="README_RU.md">Описание на русском</a>
 </p>
 
@@ -68,7 +68,7 @@ You can get Visual Studio and SDK from Microsoft [here](https://dev.windows.com/
 
 5. Start `Winium.StoreApps.Driver.exe` ([download release from github](https://github.com/2gis/Winium.StoreApps/releases) or build it yourself)
 
-6.Ensure you have installed Nunit to run the test cases.
+ 6. Ensure you have installed Nunit to run the test cases.
 
 7. Run your tests and watch the magic happening
 
