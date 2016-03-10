@@ -68,7 +68,9 @@ You can get Visual Studio and SDK from Microsoft [here](https://dev.windows.com/
 
 5. Start `Winium.StoreApps.Driver.exe` ([download release from github](https://github.com/2gis/Winium.StoreApps/releases) or build it yourself)
 
-6. Run your tests and watch the magic happening
+6.Ensure you have installed Nunit to run the test cases.
+
+7. Run your tests and watch the magic happening
 
 ## Writing tests
 Essentially, Winium.StoreApps supports limited subset of [WebDriver JSON Wire Protocol](https://code.google.com/p/selenium/wiki/JsonWireProtocol), which means that you can write tests just like you would write for Selenium or Appium, here are some [docs](http://docs.seleniumhq.org/docs/03_webdriver.jsp).
